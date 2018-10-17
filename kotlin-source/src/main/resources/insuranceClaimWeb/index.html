@@ -1,0 +1,316 @@
+<!--
+--------
+WARNING:
+--------
+
+THIS CODE IS ONLY MADE AVAILABLE FOR DEMONSTRATION PURPOSES AND IS NOT SECURE! DO NOT USE IN PRODUCTION!
+
+FOR SECURITY REASONS, USING A JAVASCRIPT WEB APP HOSTED VIA THE CORDA NODE IS NOT THE RECOMMENDED WAY TO INTERFACE
+WITH CORDA NODES! HOWEVER, FOR THIS PRE-ALPHA RELEASE IT'S A USEFUL WAY TO EXPERIMENT WITH THE PLATFORM AS IT ALLOWS
+YOU TO QUICKLY BUILD A UI FOR DEMONSTRATION PURPOSES.
+
+GOING FORWARD WE RECOMMEND IMPLEMENTING A STANDALONE WEB SERVER THAT AUTHORISES VIA THE NODE'S RPC INTERFACE. IN THE
+COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Claim CorDapp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="js/angular-module.js"></script>
+</head>
+<body ng-app="demoAppModule" ng-controller="DemoAppController as demoApp">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">{{demoApp.thisNode}}</a>
+        <button ng-if='demoApp.thisNode==="O=PartyA, L=London, C=GB"' ng-click="demoApp.openModal()" type="button" class="btn btn-primary navbar-btn">Apply</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Insurance Claim Application Starts Here -->
+<script type="text/ng-template" id="demoAppModal.html">
+    <div class="modal-header">
+        <h4 class="modal-title">Add new Claim Application</h4>
+    </div>
+    <form>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="fname" class="control-label">FirstName:</label>
+                <input type="text" ng-model="modalInstance.form.fname" class="form-control" id="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname" class="control-label">LastName:</label>
+                <input type="text" ng-model="modalInstance.form.lname" class="form-control" id="lname">
+            </div>
+            <div class="form-group">
+                <label for="address" class="control-label">Address:</label>
+                <input type="text" ng-model="modalInstance.form.address" class="form-control" id="address">
+            </div>
+            <div class="form-group">
+                <label for="insuranceID" class="control-label">Insurance ID:</label>
+                <input type="text" ng-model="modalInstance.form.insuranceID" class="form-control" id="insuranceID">
+            </div>
+            <div class="form-group">
+                <label for="type" class="control-label">Insurance Type:</label>
+                <select ng-model="modalInstance.form.type" class="form-control" id="type">
+                    <option value="Life Insurance">Life Insurance</option>
+                    <option value="Health Insurance">Health Insurance</option>
+                    <option value="Vehicle Insurance">Vehicle Insurance</option>
+                    <option value="Liability Insurance">Liability Insurance</option>
+                    <option value="General Insurance">General Insurance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="value" class="control-label">Claim Amount (Int):</label>
+                <input type="text" ng-model="modalInstance.form.value" class="form-control" id="value">
+            </div>
+            <div class="form-group">
+                <label for="reason" class="control-label">Claim Reason :</label>
+                <input type="text" ng-model="modalInstance.form.reason" class="form-control" id="reason">
+            </div>
+            <div ng-show="modalInstance.formError" class="form-group">
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    Enter valid parameters
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-click="modalInstance.cancel()" type="button" class="btn btn-default">Close</button>
+            <button ng-click="modalInstance.create()" type="button" class="btn btn-primary">Apply</button>
+        </div>
+    </form>
+</script>
+<!-- Insurance Claim Application  ends -->
+
+<!-- Verify Insurance Underwriting starts-->
+<script type="text/ng-template" id="demoAppUnderwritingModal.html">
+    <div class="modal-header">
+        <h4 class="modal-title">Send for Underwriting</h4>
+    </div>
+    <form>
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="control-label">Claim Application with following details will be sent for Underwriting:</label>
+                <ul>
+                    <li>Claim Id: {{modalInstance.currentInsurance.linearId.id}}</li>
+                    <li>Applicant Name: {{modalInstance.currentInsurance.fname}} {{modalInstance.currentInsurance.lname}}</li>
+                    <li>Insurance Id: {{modalInstance.currentInsurance.insuranceID}}</li>
+                    <li>Insurance Type: {{modalInstance.currentInsurance.type}}</li>
+                    <li>Claim Amount: {{modalInstance.currentInsurance.value}}</li>
+                    <li>Claim Reason: {{modalInstance.currentInsurance.reason}}</li>
+                </ul>
+            </div>
+        <div class="modal-footer">
+            <button ng-click="modalInstance.cancel()" type="button" class="btn btn-default">Close</button>
+            <button ng-click="modalInstance.createUnderwriting()" type="button" class="btn btn-primary">Send</button>
+        </div>
+        </div>
+    </form>
+</script>
+<!-- Verify Insurance Underwriting ends -->
+
+<!-- Underwriting Response Starts -->
+<script type="text/ng-template" id="demoAppUnderwritingEvaluation.html">
+    <div class="modal-header">
+        <h4 class="modal-title">Send Response </h4>
+    </div>
+    <form>
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="control-label">Approve Amount for following Claim :</label>
+                <ul>
+                    <li>Claim Id: {{modalInstance.currentApplication.linearId.id}}</li>
+                    <li>Applicant Name: {{modalInstance.currentApplication.fname}} {{modalInstance.currentApplication.lname}}</li>
+                    <li>Claim Amount: {{modalInstance.currentApplication.value}}</li>
+                    <li>Claim Reason: {{modalInstance.currentApplication.reason}}</li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="approvedAmount" class="control-label">Approved Amount (Int):</label>
+                <input type="text" ng-model="modalInstance.form.approvedAmount" class="form-control" id="approvedAmount">
+            </div>
+            <div ng-show="modalInstance.formError" class="form-group">
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    Enter valid parameters
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="modalInstance.cancel()" type="button" class="btn btn-default">Close</button>
+                <button ng-click="modalInstance.underwritingEvaluation()" type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </form>
+</script>
+<!-- Underwriting Response Ends -->
+
+<!-- Company Response Starts -->
+<script type="text/ng-template" id="demoAppCompanyResponse.html">
+    <div class="modal-header">
+        <h4 class="modal-title">Send Response To Applicant</h4>
+    </div>
+    <form>
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="control-label">Following Details will be send to Applicant </label>
+                <ul>
+                    <li>Insurance Id: {{modalInstance.currentResponse.insuranceID}}</li>
+                    <li>Applicant Name: {{modalInstance.currentResponse.fname}} {{modalInstance.currentApplication.lname}}</li>
+                    <li>Insurance Type: {{modalInstance.currentResponse.type}}</li>
+                    <li>Claim Amount: {{modalInstance.currentResponse.value}}</li>
+                    <li>Claim Reason: {{modalInstance.currentResponse.reason}}</li>
+                    <li>Claim Status: {{modalInstance.currentResponse.insuranceStatus}}</li>
+                    <li style="font-weight: bold;">Approved Amount: {{modalInstance.currentResponse.approvedAmount}}</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="modalInstance.cancel()" type="button" class="btn btn-default">Close</button>
+                <button ng-click="modalInstance.createCompanyResponse()" type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </form>
+</script>
+<!-- Company Response Ends -->
+
+<script type="text/ng-template" id="messageContent.html">
+    <div class="modal-body" id="modal-body">
+        {{ modalInstanceTwo.message }}
+    </div>
+</script>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="panel-group" id="accordion">
+            <div class="panel" ng-if='demoApp.thisNode==="O=PartyA, L=London, C=GB"'>
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            My Applications:
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-show="!demoApp.ApplicationStates.length" class="panel-body">Use the "Apply" button to fill Claim Application.</div>
+                    <div ng-repeat="insurance in demoApp.ApplicationStates" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Claim ID: {{insurance.linearId.id}}</li>
+                                <li>Insurance ID: {{insurance.insuranceID}}</li>
+                                <li>Insurance Type: {{insurance.type}}</li>
+                                <li>Applicant Name: {{insurance.fname + " " + insurance.lname}}</li>
+                                <li>Address: {{insurance.address}}</li>
+                                <li>Company Name: {{insurance.insurerNode}}</li>
+                                <li>Claim Amount: {{insurance.value}}</li>
+                                <li>Claim Reason: {{insurance.reason}}</li>
+                                <li>Claim Status: {{insurance.insuranceStatus}}</li>
+                                <li ng-if="(insurance.approvedAmount > 0)">Approved Amount: {{insurance.approvedAmount}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" ng-if='demoApp.thisNode==="O=PartyB, L=New York, C=US"'>
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Claim Applications :
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-show="(!demoApp.ApplicationStates.length)" class="panel-body">No Claim Applications Available.</div>
+                    <div ng-if=(insurance.insuranceStatus!='PENDING') ng-repeat="insurance in demoApp.ApplicationStates" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Claim ID: {{insurance.linearId.id}}</li>
+                                <li>Insurance ID: {{insurance.insuranceID}}</li>
+                                <li ng-if="insurance.referenceID!='Not Defined'">Claim Undertaking ID: {{insurance.referenceID}}</li>
+                                <li>Insurance Type: {{insurance.type}}</li>
+                                <li>Applicant Name: {{insurance.fname + " " + insurance.lname}}</li>
+                                <li>Address: {{insurance.address}}</li>
+                                <li>Claim Amount: {{insurance.value}}</li>
+                                <li>Claim Reason: {{insurance.reason}}</li>
+                                <li>Claim Status: {{insurance.insuranceStatus}}</li>
+                                <li ng-if="(insurance.approvedAmount > 0)">Approved Amount: {{insurance.approvedAmount}}</li>
+                            </ul>
+                            <button ng-show="demoApp.showButton"  ng-if=(insurance.insuranceStatus=='RECEIVED') ng-click="demoApp.openUnderwritingModal(insurance)" type="button" class="btn btn-primary navbar-btn pull-right ">Underwriting</button>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Claim Applications Pending for Underwriting:
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-show="!demoApp.UnderwritingStates.length" class="panel-body">No Claim Applications Available.</div>
+                    <div ng-if="(application.insuranceStatus=='PENDING') || (application.insuranceStatus=='ACCEPTED') || (application.insuranceStatus=='REJECTED')"ng-repeat="application in demoApp.UnderwritingStates" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Claim Undertaking ID: {{application.linearId.id}}</li>
+                                <li>Insurance ID: {{application.insuranceID}}</li>
+                                <li>Insurance Type: {{application.type}}</li>
+                                <li>Applicant Name: {{application.fname + " " + application.lname}}</li>
+                                <li>Claim Amount: {{application.value}}</li>
+                                <li>Claim Reason: {{application.reason}}</li>
+                                <li ng-if="(application.approvedAmount > 0)">Approved Amount: {{application.approvedAmount}}</li>
+                                <li>Claim Status: {{application.insuranceStatus}}</li>
+                            </ul>
+                            <button ng-model="CompanyResponse" ng-if="(application.insuranceStatus=='ACCEPTED') || (application.insuranceStatus=='REJECTED')" ng-click="demoApp.openCompanyResponseModal(application)" type="button" class="btn btn-primary navbar-btn pull-right">Send Response To Applicant</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" ng-if='demoApp.thisNode==="O=PartyC, L=Paris, C=FR"'>
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Claim Applications:
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-show="!demoApp.UnderwritingStates.length" class="panel-body">No Claim Applications Available.</div>
+                    <div ng-repeat="application in demoApp.UnderwritingStates" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Claim Undertaking ID: {{application.linearId.id}}</li>
+                                <li>Insurance ID: {{application.insuranceID}}</li>
+                                <li>Insurance Type: {{application.type}}</li>
+                                <li>Applicant Name: {{application.fname + " " + application.lname}}</li>
+                                <li>Claim Amount: {{application.value}}</li>
+                                <li>Claim Reason: {{application.reason}}</li>
+                                <li ng-if="(application.approvedAmount > 0)">Approved Amount: {{application.approvedAmount}}</li>
+                                <li>Claim Status: {{application.insuranceStatus}}</li>
+                            </ul>
+                            <button ng-if=(application.insuranceStatus=='PENDING') ng-click="demoApp.openUnderwritingEvaluationModal(application)" type="button" class="btn btn-primary navbar-btn pull-right">Send Response</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+</body>
+</html>

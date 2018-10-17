@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.insuranceClaim.contract.UnderwritingContractTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2018-10-17T09:50:58" hostname="GOD10603" time="1.672">
+  <properties/>
+  <testcase name="All Participants must sign transaction" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.102"/>
+  <testcase name="Insurance Company and Underwriter Party cannot be same entity" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.121"/>
+  <testcase name="Insurance Company and Underwriter Party cannot be the same entity" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.041"/>
+  <testcase name="Underwriting Evaluation transaction must have only one output state" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.063"/>
+  <testcase name="All Participants must sign the transaction" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.109"/>
+  <testcase name="Underwriting transaction must have Two output states" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.058"/>
+  <testcase name="Transaction must include UnderwritingEvaluation command" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.042"/>
+  <testcase name="Transaction must include Underwriting command" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.055"/>
+  <testcase name="Underwriting transaction must have zero input" classname="com.insuranceClaim.contract.UnderwritingContractTest" time="0.072"/>
+  <system-out><![CDATA[[WARN ] 15:20:58,032 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:58,222 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:58,453 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:58,621 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:58,780 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:58,986 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:59,166 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:59,342 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+[WARN ] 15:20:59,631 [Test worker] (CordappProviderImpl.kt:40) cordapp.CordappProviderImpl.verifyInstalledCordapps - The network parameters don't specify any whitelisted contract implementations. Please contact your zone operator. See https://docs.corda.net/network-map.html {}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.activemq:artemis-journal:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/artemis-journal/2.2.0/55099f14d8ad390e3db4b1e5748d0310766802c0/artemis-journal-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.activemq/artemis-journal/2.2.0/fbbe4ad9b4f315d91418d701108ce0534ba90aae/artemis-journal-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

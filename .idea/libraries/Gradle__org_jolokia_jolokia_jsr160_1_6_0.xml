@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jolokia:jolokia-jsr160:1.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jolokia/jolokia-jsr160/1.6.0/ff2cd08585b32f740744f5ad86feebecca2b0c8d/jolokia-jsr160-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jolokia/jolokia-jsr160/1.6.0/c1fcdf10aa85ff9ca053231787d613aa1556d756/jolokia-jsr160-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
