@@ -83,9 +83,6 @@ class ClaimApi(private val rpcOps: CordaRPCOps) {
         val insurerNode = rpcOps.wellKnownPartyFromX500Name(companyName) ?:
         return Response.status(BAD_REQUEST).entity("Company named $companyName cannot be found.\n").build()
 
-        if (insurerNode == null) {
-            return Response.status(BAD_REQUEST).entity("parameter 'Company Name' missing or has wrong format.\n").build()
-        }
         if (value <= 0) {
             return Response.status(BAD_REQUEST).entity(" parameter 'value' must be non-negative.\n").build()
         }
@@ -131,10 +128,6 @@ class ClaimApi(private val rpcOps: CordaRPCOps) {
             val underwriter =CordaX500Name.parse("O=PartyC, L=Paris, C=FR")
             val underwriterNode = rpcOps.wellKnownPartyFromX500Name(underwriter) ?:
             return Response.status(BAD_REQUEST).entity("Underwriter named $underwriter cannot be found.\n").build()
-
-            if (underwriterNode == null) {
-                return Response.status(BAD_REQUEST).entity("parameter 'UnderwriterNode' missing or has wrong format.\n").build()
-            }
 
             if(fname==null){
                 return Response.status(BAD_REQUEST).entity("parameter 'First Name' missing or has wrong format.\n").build()
@@ -191,10 +184,6 @@ class ClaimApi(private val rpcOps: CordaRPCOps) {
                 return Response.status(BAD_REQUEST).entity("Approved Amount cannot be Negative or Zero\n").build()
             }
 
-            if (insurerNode == null) {
-                return Response.status(BAD_REQUEST).entity(" parameter 'CompanyNode' missing or has wrong format.\n").build()
-            }
-
             if(fname==null){
                 return Response.status(BAD_REQUEST).entity("parameter 'First Name' missing or has wrong format.\n").build()
             }
@@ -237,11 +226,6 @@ class ClaimApi(private val rpcOps: CordaRPCOps) {
             val applicant=CordaX500Name.parse("O=PartyA, L=London, C=GB")
             val applicantNode = rpcOps.wellKnownPartyFromX500Name(applicant) ?:
             return Response.status(BAD_REQUEST).entity("Company named $applicant cannot be found.\n").build()
-
-
-            if (applicantNode == null) {
-                return Response.status(BAD_REQUEST).entity(" parameter 'borrowerNode' missing or has wrong format.\n").build()
-            }
 
             if (insuranceID == null) {
                 return Response.status(BAD_REQUEST).entity("Insurance ID is missing . \n").build()
