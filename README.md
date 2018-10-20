@@ -7,17 +7,17 @@ Communication between any of the Parties or any data exchanged remains private t
 The CorDapp includes:
 
 * A Claim State definition that records the Applicant details required by the Insurance Company.
-* An Underwriter State defination to handle the underwriting process.
+* An Underwriter State definition to handle the underwriting process.
 * Two contracts, one that facilitates the verification of Insurance Claim and other that verifies the Underwriting process.
 * Four flows for creating Insurance Claim Application, Forwarding the Application to Underwriting, Underwriter verifying it and responding with the Approved claim amount and finally Insurance Companny reverting the approval details to the Applicant
 
-The CorDapp allows you to create an Insurance Claim and get it approved by the Underwiter. The Insurance Company can further carry out the Underwriting Process.
+The CorDapp allows you to create an Insurance Claim and get it approved by the Underwriter. The Insurance Company can further carry out the Underwriting Process.
 The CorDapp also comes with an API and UI layer that allows you to do all of the aforementioned things.
 
 # Instructions for setting up
 
 1. `git clone https://github.com/Manila-Gauns/Cordapp-InsuranceClaim
-2. `cd cordapp-insurance`
+2. `cd cordapp-insuranceClaim`
 3. `./gradlew deployNodes` - building may take upto a minute (it's much quicker if you already have the Corda binaries)./r
 4. `cd kotlin-source/build/nodes`
 5. `./runnodes`
@@ -40,12 +40,24 @@ You'll see a basic page, listing all the API end-points and static web content. 
 ## Create New Insurance
 
 1. Click on the "Apply" button.
-2. Fill in all the required details
+2. Fill in all the required details (Guidelines to fill the form given below)
 3. Click "Apply"
 4. Wait for the transaction confirmation
 5. After the transaction message pops up, click anywhere
 6. The UI should update to reflect the new Insurance Application details
 7. Navigate to the Insurance Company's dashboard. You should see the same Application details there
+
+## Guidelines to fill Claim Application Form
+
+The Claim Application Form consists of following fields : 
+
+1. FirstName - first name of the Applicant. (String) e.g. Alex
+2. LastName - last name of the Applicant. (String) e.g. Gomez
+3. Address - Residential Address of the Applicant. (String) e.g. Street 16/A, LA. 
+4. Insurance ID - ID of the insurance for which the Applicant wants to apply the Claim for. (AlphaNumeric) e.g. ID345667
+5. Insurance Type - Type of Insurance (Choose from the drop-down)
+6. Claim Amount - Insurance amount to be claimed. (Integer) e.g 30000
+7. Claim Reason - The reason for which the Applicant wants to Claim the insurance (String) e.g Car Accident
 
 ## Insurance Company forwarding Application to Underwriter
 
