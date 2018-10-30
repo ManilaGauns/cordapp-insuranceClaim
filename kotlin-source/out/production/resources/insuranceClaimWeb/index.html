@@ -48,19 +48,19 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
         <div class="modal-body">
             <div class="form-group">
                 <label for="fname" class="control-label">FirstName:</label>
-                <input type="text" ng-model="modalInstance.form.fname" class="form-control" id="fname">
+                <input type="text" placeholder="Example: Alex" ng-model="modalInstance.form.fname" class="form-control" id="fname">
             </div>
             <div class="form-group">
                 <label for="lname" class="control-label">LastName:</label>
-                <input type="text" ng-model="modalInstance.form.lname" class="form-control" id="lname">
+                <input type="text" placeholder="Example: Gomez" ng-model="modalInstance.form.lname" class="form-control" id="lname">
             </div>
             <div class="form-group">
                 <label for="address" class="control-label">Address:</label>
-                <input type="text" ng-model="modalInstance.form.address" class="form-control" id="address">
+                <input type="text" placeholder="Example: Street 16/A, LA" ng-model="modalInstance.form.address" class="form-control" id="address">
             </div>
             <div class="form-group">
                 <label for="insuranceID" class="control-label">Insurance ID:</label>
-                <input type="text" ng-model="modalInstance.form.insuranceID" class="form-control" id="insuranceID">
+                <input type="text" placeholder="Example: ID23456" ng-model="modalInstance.form.insuranceID" class="form-control" id="insuranceID">
             </div>
             <div class="form-group">
                 <label for="type" class="control-label">Insurance Type:</label>
@@ -74,10 +74,10 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
             </div>
             <div class="form-group">
                 <label for="value" class="control-label">Claim Amount (Int):</label>
-                <input type="text" ng-model="modalInstance.form.value" class="form-control" id="value">
+                <input type="text" placeholder = "Example: 20000" ng-model="modalInstance.form.value" class="form-control" id="value">
             </div>
             <div class="form-group">
-                <label for="reason" class="control-label">Claim Reason :</label>
+                <label for="reason" class="control-label">Claim Reason:</label>
                 <input type="text" ng-model="modalInstance.form.reason" class="form-control" id="reason">
             </div>
             <div ng-show="modalInstance.formError" class="form-group">
@@ -131,7 +131,7 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
     <form>
         <div class="modal-body">
             <div class="form-group">
-                <label class="control-label">Approve Amount for following Claim :</label>
+                <label class="control-label">Approve Amount for following Claim:</label>
                 <ul>
                     <li>Claim Id: {{modalInstance.currentApplication.linearId.id}}</li>
                     <li>Applicant Name: {{modalInstance.currentApplication.fname}} {{modalInstance.currentApplication.lname}}</li>
@@ -229,7 +229,7 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                 <div class="panel-primary">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            Claim Applications :
+                            Claim Applications:
                         </h4>
                     </div>
                 </div>

@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ec9c06-7dcb-447c-ba16-31769f694a63" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/cordapp-insuranceClaim.iml" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/NotaryService/net.corda.node.Corda.stdout.log" afterPath="$PROJECT_DIR$/build/20181017-123429.136/NotaryService/net.corda.node.Corda.stdout.log" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyA/net.corda.node.Corda.stdout.log" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyA/net.corda.node.Corda.stdout.log" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyA/persistence.mv.db" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyA/persistence.mv.db" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyB/net.corda.node.Corda.stdout.log" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyB/net.corda.node.Corda.stdout.log" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyB/persistence.mv.db" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyB/persistence.mv.db" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyC/net.corda.node.Corda.stdout.log" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyC/net.corda.node.Corda.stdout.log" />
+      <change beforePath="$PROJECT_DIR$/build/20181017-123429.136/PartyC/persistence.mv.db" afterPath="$PROJECT_DIR$/build/20181017-123429.136/PartyC/persistence.mv.db" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/api/ClaimApi.class" afterPath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/api/ClaimApi.class" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/plugin/ClaimPlugin.class" afterPath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/plugin/ClaimPlugin.class" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/plugin/ClaimPluginKt$sam$Function$82ce47fa.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/schema/ClaimSchemaV1$PersistentInsurance.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/schema/ClaimSchemaV1.class" afterPath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/schema/ClaimSchemaV1.class" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/state/ClaimState.class" afterPath="$PROJECT_DIR$/kotlin-source/build/classes/kotlin/main/com/insuranceClaim/state/ClaimState.class" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.contract.ClaimContractTest.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.contract.ClaimContractTest.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.contract.UnderwritingContractTest.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.contract.UnderwritingContractTest.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.flow.InsuranceClaimFlowTest.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/classes/com.insuranceClaim.flow.InsuranceClaimFlowTest.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/index.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/packages/com.insuranceClaim.contract.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/packages/com.insuranceClaim.contract.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/packages/com.insuranceClaim.flow.html" afterPath="$PROJECT_DIR$/kotlin-source/build/reports/tests/test/packages/com.insuranceClaim.flow.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/resources/main/insuranceClaimWeb/index.html" afterPath="$PROJECT_DIR$/kotlin-source/build/resources/main/insuranceClaimWeb/index.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.contract.ClaimContractTest.xml" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.contract.ClaimContractTest.xml" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.contract.UnderwritingContractTest.xml" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.contract.UnderwritingContractTest.xml" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.flow.InsuranceClaimFlowTest.xml" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/TEST-com.insuranceClaim.flow.InsuranceClaimFlowTest.xml" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/output.bin" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/output.bin.idx" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/kotlin-source/build/test-results/test/binary/results.bin" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/out/production/classes/com/insuranceClaim/api/ClaimApi.class" afterPath="$PROJECT_DIR$/kotlin-source/out/production/classes/com/insuranceClaim/api/ClaimApi.class" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/out/production/resources/insuranceClaimWeb/index.html" afterPath="$PROJECT_DIR$/kotlin-source/out/production/resources/insuranceClaimWeb/index.html" />
+      <change beforePath="$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html" afterPath="$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -36,28 +71,8 @@
       <file leaf-file-name="ClaimApi.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/api/ClaimApi.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClaimSchema.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/ClaimSchema.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnderwritingSchema.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/UnderwritingSchema.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -66,33 +81,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-              <folding>
-                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="149">
+              <caret line="80" column="71" lean-forward="false" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClaimState.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/ClaimState.kt">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-              <folding>
-                <element signature="e#34#435#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnderwritingState.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/UnderwritingState.kt">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kotlin-source/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="527">
+              <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -110,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ModalInstanceUnderwritingCtrl</find>
-      <find>cancel</find>
       <find>cancelUn</find>
       <find>Underwriting</find>
       <find>insuranceUnderwriting</find>
@@ -140,6 +148,8 @@
       <find>application</find>
       <find>insurance</find>
       <find>insuranceID</find>
+      <find>:</find>
+      <find>place</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -550,6 +560,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="7696031154963" />
         <entry key="$PROJECT_DIR$/build.gradle" value="562070013" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3560673814" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1909947883" />
@@ -830,11 +841,15 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kotlin-source/src/test/kotlin/com/insurance/flow/UnderwritingEvaluationFlowTest.kt" />
         <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insurance/flow/UnderwritingFlow.kt" />
         <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insurance/flow/ResponseFlow.kt" />
         <option value="$PROJECT_DIR$/kotlin-source/src/test/kotlin/com/insurance/flow/UnderwritingFlowTest.kt" />
@@ -880,11 +895,12 @@
         <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/plugin/ClaimPlugin.kt" />
         <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/api/ClaimApi.kt" />
         <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/ClaimSchema.kt" />
-        <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/ClaimState.kt" />
         <option value="$PROJECT_DIR$/.idea/runConfigurations/Run_InsuranceClaim_Application_Cordapp___Java.xml" />
         <option value="$PROJECT_DIR$/.idea/runConfigurations/Run_InsuranceClaim_Application_Cordapp___Kotlin.xml" />
         <option value="$PROJECT_DIR$/.idea/runConfigurations/Run_InsuranceClaim_Application_RPC_Client___Java.xml" />
         <option value="$PROJECT_DIR$/.idea/runConfigurations/Run_InsuranceClaim_Application_RPC_Client___Kotlin.xml" />
+        <option value="$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/ClaimState.kt" />
+        <option value="$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html" />
       </list>
     </option>
   </component>
@@ -894,7 +910,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -919,7 +935,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -927,16 +942,22 @@
               <item name="cordapp-insuranceClaim" type="b2602c69:ProjectViewProjectNode" />
               <item name="cordapp-insuranceClaim" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="cordapp-insuranceClaim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cordapp-insuranceClaim" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin-source" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cordapp-trading" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2520661" />
@@ -1085,9 +1106,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_tests - 2018.10.16 at 14h 50m 47s.xml">
-      <configuration name="Unit tests" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="Unit_tests - 2018.10.16 at 15h 44m 46s.xml">
       <configuration name="Unit tests" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -1115,9 +1133,12 @@
     <history-entry file="Unit_tests - 2018.10.17 at 15h 21m 16s.xml">
       <configuration name="Unit tests" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Unit_tests - 2018.10.22 at 12h 01m 25s.xml">
+      <configuration name="Unit tests" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1133,7 +1154,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1160,13 +1181,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1276,13 +1290,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules/cordapp-Insurance.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/cordapp-Insurance.iml" />
     <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Run_Integration_Tests___Java.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -1311,26 +1319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="121" column="26" lean-forward="true" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda/corda-webserver-impl/3.2-corda/c1cc6fe0bff065f4f2dce103fefe2d35a9002b4e/corda-webserver-impl-3.2-corda-sources.jar!/net/corda/webserver/service/WebServerPluginRegistry.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45">
           <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1363,24 +1355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/ClaimResponseFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="118" column="47" lean-forward="true" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/UnderwritingResponseFlow.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1416">
           <caret line="28" column="139" lean-forward="false" selection-start-line="28" selection-start-column="130" selection-end-line="28" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/UnderwritingCreationFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-671">
-          <caret line="76" column="54" lean-forward="false" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1391,21 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/ApplyClaimFlow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="102" column="86" lean-forward="true" selection-start-line="102" selection-start-column="86" selection-end-line="102" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/contract/ClaimContract.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -1413,59 +1376,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/plugin/ClaimPlugin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="93" lean-forward="false" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/js/angular-module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="6" lean-forward="false" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-          <folding>
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/UnderwritingState.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/api/ClaimApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/UnderwritingSchema.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/ClaimSchema.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1498,13 +1412,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/META-INF/services/net.corda.webserver.services.WebServerPluginRegistry">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/ClaimSchema.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/schema/UnderwritingSchema.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/UnderwritingCreationFlow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="76" column="54" lean-forward="false" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/ClaimResponseFlow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="118" column="47" lean-forward="false" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/plugin/ClaimPlugin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/state/ClaimState.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="527">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding>
-            <element signature="e#34#435#0" expanded="true" />
+            <element signature="e#34#435#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/flow/ApplyClaimFlow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="102" column="86" lean-forward="false" selection-start-line="102" selection-start-column="86" selection-end-line="102" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/js/angular-module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/contract/ClaimContract.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/kotlin/com/insuranceClaim/api/ClaimApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/src/main/resources/insuranceClaimWeb/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="80" column="71" lean-forward="false" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kotlin-source/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1582,4 +1599,6 @@
           </splitter-proportions>
         </settings>
       </state>
-    </sta
+    </states>
+  </component>
+</project>
